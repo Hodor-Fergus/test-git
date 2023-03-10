@@ -1,0 +1,400 @@
+{
+	"name": "read and write pyspark",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "synapsepool",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "e40266bd-ae2b-41f9-9628-d04f2e3c9d0e"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"ed78e68f-ba28-4f8c-b024-8ee76389bb1c": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "1",
+										"1": "522816eF8fdBE6d",
+										"2": "Mckinney PLC",
+										"3": "http://soto.com/",
+										"4": "Sri Lanka",
+										"5": "Synergized global system engine",
+										"6": "1988",
+										"7": "Dairy",
+										"8": "3930"
+									},
+									{
+										"0": "2",
+										"1": "70C7FBD7e6Aa3Ea",
+										"2": "Cunningham LLC",
+										"3": "http://harding-duffy.com/",
+										"4": "Namibia",
+										"5": "Team-oriented fault-tolerant adapter",
+										"6": "2018",
+										"7": "Library",
+										"8": "7871"
+									},
+									{
+										"0": "3",
+										"1": "428B397eA2d7290",
+										"2": "Ruiz-Walls",
+										"3": "http://www.atkins.biz/",
+										"4": "Iran",
+										"5": "Re-contextualized bifurcated moderator",
+										"6": "2003",
+										"7": "Hospital / Health Care",
+										"8": "3095"
+									},
+									{
+										"0": "4",
+										"1": "9D234Ae8Cc51C1c",
+										"2": "Parrish, Osborne and Clarke",
+										"3": "http://salazar.info/",
+										"4": "British Indian Ocean Territory (Chagos Archipelago)",
+										"5": "Fully-configurable next generation concept",
+										"6": "1989",
+										"7": "Supermarkets",
+										"8": "5422"
+									},
+									{
+										"0": "5",
+										"1": "6CDCcdE3D0b7b44",
+										"2": "Diaz, Robles and Haley",
+										"3": "https://www.brooks-scott.net/",
+										"4": "Botswana",
+										"5": "Inverse intangible methodology",
+										"6": "2013",
+										"7": "Nanotechnology",
+										"8": "3135"
+									},
+									{
+										"0": "6",
+										"1": "cdAD9BBF227ADAE",
+										"2": "Keith PLC",
+										"3": "http://www.mathews.com/",
+										"4": "Ecuador",
+										"5": "Cross-group coherent strategy",
+										"6": "1978",
+										"7": "Online Publishing",
+										"8": "7233"
+									},
+									{
+										"0": "7",
+										"1": "0fe6F8Dd1Cf5e4d",
+										"2": "Humphrey-Myers",
+										"3": "https://faulkner-mclaughlin.info/",
+										"4": "Sierra Leone",
+										"5": "Adaptive directional process improvement",
+										"6": "2005",
+										"7": "Publishing Industry",
+										"8": "6022"
+									},
+									{
+										"0": "8",
+										"1": "ECC0FBd0dc4aEfc",
+										"2": "Castaneda-Mcmahon",
+										"3": "http://www.anthony.com/",
+										"4": "Zimbabwe",
+										"5": "Front-line value-added emulation",
+										"6": "2015",
+										"7": "Defense / Space",
+										"8": "4580"
+									},
+									{
+										"0": "9",
+										"1": "e0E6cfAE68d08c9",
+										"2": "Santos-Bowman",
+										"3": "https://www.oneill-guerrero.org/",
+										"4": "Ecuador",
+										"5": "Multi-layered optimizing system engine",
+										"6": "1979",
+										"7": "Computer Hardware",
+										"8": "3245"
+									},
+									{
+										"0": "10",
+										"1": "A7DdBb239A86689",
+										"2": "Valdez-Estes",
+										"3": "http://melendez-malone.com/",
+										"4": "Timor-Leste",
+										"5": "Diverse next generation open architecture",
+										"6": "1985",
+										"7": "Plastics",
+										"8": "1785"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Index",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Organization Id",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Name",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Website",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "Country",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "Description",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "Founded",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "Industry",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "Number of employees",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/dc9f858b-e539-432b-b37a-caca3e7f683b/resourceGroups/PracticeResourceGroup/providers/Microsoft.Synapse/workspaces/wendysynapse/bigDataPools/synapsepool",
+				"name": "synapsepool",
+				"type": "Spark",
+				"endpoint": "https://wendysynapse.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/synapsepool",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.3",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"LOAD ORGANISATION FILE"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://wdlsfilename@wendydlstorage.dfs.core.windows.net/Training Data/organizations-10000.csv', format='csv'\r\n",
+					"## If header exists uncomment line below\r\n",
+					", header=True\r\n",
+					")\r\n",
+					"display(df.limit(10))"
+				],
+				"execution_count": 16
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"**save link to variable Output**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"container = 'wdlsfilename'\r\n",
+					"datalake = 'wendydlstorage'\r\n",
+					"folder = 'Training Data'\r\n",
+					"subfolder= 'Revised_Data'\r\n",
+					"subfolder2='RawData'\r\n",
+					"filename = 'organizations-10000.csv'\r\n",
+					"output = 'abfss://' + container + '@' + datalake +'.dfs.core.windows.net/' + folder +'/'+ subfolder\r\n",
+					"output2 =  'abfss://' + container + '@' + datalake +'.dfs.core.windows.net/' + folder +'/'+ subfolder2\r\n",
+					"print(output) "
+				],
+				"execution_count": 22
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subfolder2='RawData'\r\n",
+					"output2 =  'abfss://' + container + '@' + datalake +'.dfs.core.windows.net/' + folder +'/'+ subfolder2\r\n",
+					"print(output2)\r\n",
+					"df.show()"
+				],
+				"execution_count": 28
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"**COPY CERTAIN COLUMNS TO A NEW DATAFRAME and SHOW**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_revised = df.select(df.Name,df.Founded,df.Country,df.Industry, \"Number of employees\")\r\n",
+					"df_revised.show()"
+				],
+				"execution_count": 20
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"**WRITE DATA TO 'OUTPUT' STORAGE**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_revised.write.csv(output, mode='overwrite')\r\n",
+					"df_revised.write.csv(output2, mode='overwrite')"
+				],
+				"execution_count": 29
+			}
+		]
+	}
+}
