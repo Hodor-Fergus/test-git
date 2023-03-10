@@ -1,0 +1,17 @@
+{
+	"name": "Count Products by Category",
+	"properties": {
+		"content": {
+			"query": "\n SELECT\n     Category, COUNT(*) AS ProductCount\n FROM\n     OPENROWSET(\n         BULK 'https://wendydlstorage.dfs.core.windows.net/wdlsfilename/products.csv',\n         FORMAT = 'CSV',\n         PARSER_VERSION='2.0',\n         HEADER_ROW = TRUE\n     ) AS [result]\n GROUP BY Category;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
